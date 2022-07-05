@@ -35,8 +35,13 @@
             background-color: black;
         }
     </style>
+    <script type="text/javascript">
+        window.history.forward();
+
+        function noBack() { window.history.forward(); }
+    </script>
 </head>
-<body>
+<body onload="noBack()" onpageshow="if (event.persisted) noBack()" onload="">
     <h2>5) Click no retângulo.</h2>
 
     <button class="t1 error" onclick="clickBtn()"></button>

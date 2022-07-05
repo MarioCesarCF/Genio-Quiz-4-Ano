@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Genio Quiz</title>
-    <style>
-        
-    </style>
+    <script type="text/javascript">
+        window.history.forward();
+
+        function noBack() { window.history.forward(); }
+    </script>
     
 </head>
-<body>
+<body onload="noBack()" onpageshow="if (event.persisted) noBack()" onload="">
     <h2>1) No jogo Minecraft de que mob é este ovo?</h2>
     <figure>
         <img src="./img/ovo.png" alt="">
