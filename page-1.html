@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genio Quiz</title>
+    <style>
+        
+    </style>
+    
+</head>
+<body>
+    <h2>1) No jogo Minecraft de que mob é este ovo?</h2>
+    <figure>
+        <img src="./img/ovo.png" alt="">
+    </figure>
+    <button onclick='clickBtn()' id="q1">A) Esqueleto</button>
+    <button onclick='clickBtn()' id="q2">B) Iron Golem</button>
+    <button onclick='clickBtn()' id="q3">C) Creeper</button>
+    <button onclick='clickBtn()' id="q4">D) Aranha</button>   
+    
+    <script>
+        const resposta1 = document.getElementById('q1');
+        const resposta2 = document.getElementById('q2');
+        const resposta3 = document.getElementById('q3');
+        const resposta4 = document.getElementById('q4');
+        
+        function clickBtn () {
+            if(event.target == resposta3) {
+                window.location.href = './page-2.html';
+            } else {
+                window.location.href = './gameover.html';
+            }
+        }
+    </script>
+</body>
+</html>

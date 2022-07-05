@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genio Quiz</title>
+    <style>
+        button {
+            margin: 10px;   
+        }
+        .t1 {
+            width: 50px;
+            height: 50px;
+            background-color: black;
+        }
+        .t2 {
+            width: 35px;
+            height: 35px;
+            background-color: black;
+        }
+        .t3 {
+            width: 25px;
+            height: 25px;
+            background-color: black;
+        }
+        .t4 {
+            width: 15px;
+            height: 15px;
+            background-color: black;
+        }
+        .t5 {
+            width: 51px;
+            height: 50px;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <h2>5) Click no retângulo.</h2>
+
+    <button class="t1 error" onclick="clickBtn()"></button>
+    <button class="t4 error" onclick="clickBtn()"></button>
+    <button class="t1 error" onclick="clickBtn()"></button>
+    <button class="t2 error" onclick="clickBtn()"></button>
+    <button class="t3 error" onclick="clickBtn()"></button>
+    <button class="t3 error" onclick="clickBtn()"></button>
+    <button class="t2 error" onclick="clickBtn()"></button>
+    <button class="t5" onclick="clickBtn()"></button>
+    <button class="t3 error" onclick="clickBtn()"></button>    
+    <button class="t1 error" onclick="clickBtn()"></button>
+    <button class="t2 error" onclick="clickBtn()"></button>
+    <button class="t4 error" onclick="clickBtn()"></button>
+    <button class="t1 error" onclick="clickBtn()"></button>    
+    
+    <script>
+        const respostaCerta = document.querySelector('.t5');        
+        
+        function clickBtn () {
+            if(event.target == respostaCerta) {
+                window.location.href = './vitoria.html';
+            } else {
+                window.location.href = './gameover.html';
+            }
+        }
+    </script>
+</body>
+</html>

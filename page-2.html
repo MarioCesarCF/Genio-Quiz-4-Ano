@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genio Quiz</title>
+</head>
+<body>
+    <h2>2) Que letra está no <span onclick='clickBtn()' id="m">m</span>eio do casal Leon e Nilse?</h2>
+    <button onclick='clickBtn()' id="q1">A) Letra?</button>
+    <button onclick='clickBtn()' id="q2">B) Nenhuma</button>
+    <button onclick='clickBtn()' id="q3">C) Todas</button>
+    <button onclick='clickBtn()' id="q4">D) H</button>   
+    
+    <script>
+        const resposta1 = document.getElementById('q1');
+        const resposta2 = document.getElementById('q2');
+        const resposta3 = document.getElementById('q3');
+        const resposta4 = document.getElementById('q4');
+        const m = document.getElementById('m');
+        
+        function clickBtn () {
+            if(event.target == m) {
+                window.location.href = './page-3.html';
+            } else {
+                window.location.href = './gameover.html';
+            }
+        }
+    </script>
+</body>
+</html>

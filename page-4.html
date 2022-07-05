@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genio Quiz</title>
+</head>
+<body>
+    <h2>4) Se ontem fosse amanhã, hoje seria sexta-feira. Que dia é hoje?</h2>
+    <button onclick='clickBtn()' id="q1">A) Quart-feira</button>
+    <button onclick='clickBtn()' id="q2">B) Quinta-feira</button>
+    <button onclick='clickBtn()' id="q3">C) Sábado</button>
+    <button onclick='clickBtn()' id="q4">D) Domingo</button>   
+    
+    <script>        
+        const resposta4 = document.getElementById('q4');
+        
+        function clickBtn () {
+            if(event.target == resposta4) {
+                window.location.href = './page-5.html';
+            } else {
+                window.location.href = './gameover.html';
+            }
+        }
+    </script>
+</body>
+</html>
