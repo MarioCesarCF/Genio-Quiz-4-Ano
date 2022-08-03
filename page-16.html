@@ -14,30 +14,20 @@
 </head>
 <body onload="noBack()" onpageshow="if (event.persisted) noBack()" onload="">
     <main class="container">
-        <h2>5) Click no retângulo.</h2>
-
-        <button class="t1 error" onclick="clickBtn()"></button>
-        <button class="t4 error" onclick="clickBtn()"></button>
-        <button class="t1 error" onclick="clickBtn()"></button>
-        <button class="t2 error" onclick="clickBtn()"></button>
-        <button class="t3 error" onclick="clickBtn()"></button>
-        <button class="t3 error" onclick="clickBtn()"></button>
-        <button class="t2 error" onclick="clickBtn()"></button>
-        <button class="t5" onclick="clickBtn()"></button>
-        <button class="t3 error" onclick="clickBtn()"></button>    
-        <button class="t1 error" onclick="clickBtn()"></button>
-        <button class="t2 error" onclick="clickBtn()"></button>
-        <button class="t4 error" onclick="clickBtn()"></button>
-        <button class="t1 error" onclick="clickBtn()"></button>
+        <h2>17) Qual o resultado da divisão de 132 por 6 (132 &divide; 6)?</h2>
+        <button onclick='clickBtn()' id="q1">A) 15</button>
+        <button onclick='clickBtn()' id="q2">B) 8</button>
+        <button onclick='clickBtn()' id="q3">C) 7</button>
+        <button onclick='clickBtn()' id="q4">D) 18</button>
     </main>
        
     
     <footer>
-        <h3>Desenvolvido por <strong>D&MC</strong> 2022</h3>
+        <h3>Desenvolvido por <strong>D&MC</strong> 20<span onclick='clickBtn()' id="certo">22</span></h3>
     </footer>
 
     <script>
-        const respostaCerta = document.querySelector('.t5');        
+        const respostaCerta = document.querySelector('#certo');        
         
         function clickBtn () {
             if(event.target == respostaCerta) {

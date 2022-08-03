@@ -5,7 +5,7 @@ body {
 }
 
 main {
-    margin: 100px auto;
+    margin: 70px auto;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -51,6 +51,42 @@ a {
     width: 51px;
     height: 50px;
     background-color: black;
+}
+
+.corrida {
+    display: flex;
+    flex-direction: column;
+}
+
+#pista1 {
+    width: 300px;
+    background-color: red;
+    display: flex;
+    align-items: flex-start;
+}
+#pista1 img {
+    width: 50px;
+    margin-left: 0;
+}
+
+#pista2 {
+    width: 300px;
+    background-color: rgb(208, 255, 0);
+    display: flex;
+    align-items: flex-start;
+}
+#pista2 img {
+    width: 50px;
+}
+
+#pista3 {
+    width: 300px;
+    background-color: rgb(17, 0, 255);
+    display: flex;
+    align-items: flex-start;
+}
+#pista3 img {
+    width: 50px;
 }
 
 footer {
