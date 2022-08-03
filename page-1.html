@@ -14,14 +14,20 @@
     
 </head>
 <body onload="noBack()" onpageshow="if (event.persisted) noBack()" onload="">
-    <h2>1) No jogo Minecraft de que mob é este ovo?</h2>
-    <figure>
-        <img src="./img/ovo.png" alt="">
-    </figure>
-    <button onclick='clickBtn()' id="q1">A) Esqueleto</button>
-    <button onclick='clickBtn()' id="q2">B) Iron Golem</button>
-    <button onclick='clickBtn()' id="q3">C) Creeper</button>
-    <button onclick='clickBtn()' id="q4">D) Aranha</button>   
+    <main class="container">
+        <h2>1) No jogo Minecraft de que mob é este ovo?</h2>
+        <figure>
+            <img src="./img/ovo.png" alt="">
+        </figure>
+        <button onclick='clickBtn()' id="q1">A) Esqueleto</button>
+        <button onclick='clickBtn()' id="q2">B) Iron Golem</button>
+        <button onclick='clickBtn()' id="q3">C) Creeper</button>
+        <button onclick='clickBtn()' id="q4">D) Aranha</button>  
+    </main>    
+    
+    <footer>
+        <h3>Desenvolvido por <strong>D&MC</strong> 2022</h3>
+    </footer>
     
     <script>
         const resposta1 = document.getElementById('q1');

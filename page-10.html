@@ -14,23 +14,24 @@
 </head>
 <body onload="noBack()" onpageshow="if (event.persisted) noBack()" onload="">
     <main class="container">
-        <h2>5) Se ontem fosse amanhã, hoje seria sexta-feira. Que dia é hoje?</h2>
+        <h2>11) Em que dia da semana as aulas começaram neste ano de 2022?</h2>
         <button onclick='clickBtn()' id="q1">A) Quarta-feira</button>
         <button onclick='clickBtn()' id="q2">B) Quinta-feira</button>
-        <button onclick='clickBtn()' id="q3">C) Sábado</button>
-        <button onclick='clickBtn()' id="q4">D) Domingo</button>       
+        <button onclick='clickBtn()' id="q3">C) Sexta-feira</button>
+        <button onclick='clickBtn()' id="q4">D) Terça-feira</button>
     </main>
+       
     
     <footer>
         <h3>Desenvolvido por <strong>D&MC</strong> 2022</h3>
     </footer>
 
-    <script>        
-        const resposta4 = document.getElementById('q4');
+    <script>
+        const respostaCerta = document.querySelector('#q2');        
         
         function clickBtn () {
-            if(event.target == resposta4) {
-                window.location.href = './page-5.html';
+            if(event.target == respostaCerta) {
+                window.location.href = './page-11.html';
             } else {
                 window.location.href = './gameover.html';
             }
