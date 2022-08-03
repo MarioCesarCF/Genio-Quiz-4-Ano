@@ -14,11 +14,11 @@
 </head>
 <body onload="noBack()" onpageshow="if (event.persisted) noBack()" onload="">
     <main class="container">
-        <h2>15) Em que dia da semana as aulas começaram neste ano de 2022?</h2>
-        <button onclick='clickBtn()' id="q1">A) Quarta-feira</button>
-        <button onclick='clickBtn()' id="q2">B) Quinta-feira</button>
-        <button onclick='clickBtn()' id="q3">C) Sexta-feira</button>
-        <button onclick='clickBtn()' id="q4">D) Terça-feira</button>
+        <h2>15) Quem venceu a corrida?</h2>
+        <button onclick='clickBtn()' id="q1">A) Tartaruga</button>
+        <button onclick='clickBtn()' id="q2">B) Caracol</button>
+        <button onclick='clickBtn()' id="q3">C) Estrela do mar</button>
+        <button onclick='clickBtn()' id="q4">D) Lebre</button>
     </main>
        
     
@@ -27,7 +27,7 @@
     </footer>
 
     <script>
-        const respostaCerta = document.querySelector('.t5');        
+        const respostaCerta = document.querySelector('#q1');        
         
         function clickBtn () {
             if(event.target == respostaCerta) {

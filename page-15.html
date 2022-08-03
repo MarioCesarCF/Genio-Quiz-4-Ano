@@ -14,21 +14,11 @@
 </head>
 <body onload="noBack()" onpageshow="if (event.persisted) noBack()" onload="">
     <main class="container">
-        <h2>5) Click no retângulo.</h2>
-
-        <button class="t1 error" onclick="clickBtn()"></button>
-        <button class="t4 error" onclick="clickBtn()"></button>
-        <button class="t1 error" onclick="clickBtn()"></button>
-        <button class="t2 error" onclick="clickBtn()"></button>
-        <button class="t3 error" onclick="clickBtn()"></button>
-        <button class="t3 error" onclick="clickBtn()"></button>
-        <button class="t2 error" onclick="clickBtn()"></button>
-        <button class="t5" onclick="clickBtn()"></button>
-        <button class="t3 error" onclick="clickBtn()"></button>    
-        <button class="t1 error" onclick="clickBtn()"></button>
-        <button class="t2 error" onclick="clickBtn()"></button>
-        <button class="t4 error" onclick="clickBtn()"></button>
-        <button class="t1 error" onclick="clickBtn()"></button>
+        <h2>16) Qual o nome da espada da amiga do Zoro?</h2>
+        <button onclick='clickBtn()' id="q1">A) Um</button>
+        <button onclick='clickBtn()' id="q2">B) Dois</button>
+        <button onclick='clickBtn()' id="q3">C) Três</button>
+        <button onclick='clickBtn()' id="q4">D) Quatro</button>
     </main>
        
     
@@ -37,11 +27,11 @@
     </footer>
 
     <script>
-        const respostaCerta = document.querySelector('.t5');        
+        const respostaCerta = document.querySelector('#4');        
         
         function clickBtn () {
             if(event.target == respostaCerta) {
-                window.location.href = './vitoria.html';
+                window.location.href = './page-16.html';
             } else {
                 window.location.href = './gameover.html';
             }

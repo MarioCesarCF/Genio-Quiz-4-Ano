@@ -14,20 +14,19 @@
 </head>
 <body onload="noBack()" onpageshow="if (event.persisted) noBack()" onload="">
     <main class="container">
-        <h2>14) Em que dia da semana as aulas começaram neste ano de 2022?</h2>
-        <button onclick='clickBtn()' id="q1">A) Quarta-feira</button>
-        <button onclick='clickBtn()' id="q2">B) Quinta-feira</button>
-        <button onclick='clickBtn()' id="q3">C) Sexta-feira</button>
-        <button onclick='clickBtn()' id="q4">D) Terça-feira</button>
-    </main>
-       
+        <h2>14) Segundo alguns especialistas, qual é a melhor comida do mundo?</h2>
+        <button onclick='clickBtn()' id="q1">A) Pizza</button>
+        <button onclick='clickBtn()' id="q2">B) Sorvete</button>
+        <button onclick='clickBtn()' id="q3">C) Angu</button>
+        <button onclick='clickBtn()' id="q4">D) Salada</button>
+    </main>       
     
     <footer>
         <h3>Desenvolvido por <strong>D&MC</strong> 2022</h3>
     </footer>
 
     <script>
-        const respostaCerta = document.querySelector('.t5');        
+        const respostaCerta = document.querySelector('#q3');        
         
         function clickBtn () {
             if(event.target == respostaCerta) {
