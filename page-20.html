@@ -14,21 +14,12 @@
 </head>
 <body onload="noBack()" onpageshow="if (event.persisted) noBack()" onload="">
     <main class="container">
-        <h2>5) Click no retângulo.</h2>
+        <h2>21) Qual desses nomes é de um aluno da Turma do 1º Quarto Ano - 2022?</h2>
 
-        <button class="t1 error" onclick="clickBtn()"></button>
-        <button class="t4 error" onclick="clickBtn()"></button>
-        <button class="t1 error" onclick="clickBtn()"></button>
-        <button class="t2 error" onclick="clickBtn()"></button>
-        <button class="t3 error" onclick="clickBtn()"></button>
-        <button class="t3 error" onclick="clickBtn()"></button>
-        <button class="t2 error" onclick="clickBtn()"></button>
-        <button class="t5" onclick="clickBtn()"></button>
-        <button class="t3 error" onclick="clickBtn()"></button>    
-        <button class="t1 error" onclick="clickBtn()"></button>
-        <button class="t2 error" onclick="clickBtn()"></button>
-        <button class="t4 error" onclick="clickBtn()"></button>
-        <button class="t1 error" onclick="clickBtn()"></button>
+        <button onclick='clickBtn()' id="q1">A) Guilherme Luiz</button>
+        <button onclick='clickBtn()' id="q2">B) Ana Julia</button>
+        <button onclick='clickBtn()' id="q3">C) Dante Augusto</button>
+        <button onclick='clickBtn()' id="q4">D) Pedro Henrique</button>
     </main>
        
     
@@ -37,7 +28,7 @@
     </footer>
 
     <script>
-        const respostaCerta = document.querySelector('.t5');        
+        const respostaCerta = document.querySelector('#q2');        
         
         function clickBtn () {
             if(event.target == respostaCerta) {

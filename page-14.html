@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,6 +13,7 @@
         function noBack() { window.history.forward(); }
     </script>
 </head>
+
 <body onload="noBack()" onpageshow="if (event.persisted) noBack()" onload="">
     <main class="container">
         <h2>15) Quem venceu a corrida?</h2>
@@ -19,23 +21,42 @@
         <button onclick='clickBtn()' id="q2">B) Caracol</button>
         <button onclick='clickBtn()' id="q3">C) Estrela do mar</button>
         <button onclick='clickBtn()' id="q4">D) Lebre</button>
+        <br>
+        <br>
+        <button id="largada">Largada!</button>
+        <div class="corrida">
+            <div id="pista1">
+                <img src="./img/tartaruga.jpg" alt="" id="tartaruga">
+            </div>
+            <br>
+            <div id="pista2">
+                <img src="./img/caracol.webp" alt="" id="caracol">
+            </div>
+            <br>
+            <div id="pista3">
+                <img src="./img/estrela.jpg" alt="" id="estrela">
+            </div>
+        </div>
+
     </main>
-       
-    
+
+
     <footer>
         <h3>Desenvolvido por <strong>D&MC</strong> 2022</h3>
     </footer>
 
     <script>
-        const respostaCerta = document.querySelector('#q1');        
-        
-        function clickBtn () {
-            if(event.target == respostaCerta) {
+        const respostaCerta = document.querySelector('#q1');
+
+        function clickBtn() {
+            if (event.target == respostaCerta) {
                 window.location.href = './page-15.html';
             } else {
                 window.location.href = './gameover.html';
             }
         }
     </script>
+    <script src="./index.js"></script>
 </body>
+
 </html>
