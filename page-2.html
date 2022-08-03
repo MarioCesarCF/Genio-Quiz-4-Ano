@@ -13,21 +13,26 @@
     </script>
 </head>
 <body onload="noBack()" onpageshow="if (event.persisted) noBack()" onload="">
-    <h2>2) Que letra está no <span onclick='clickBtn()' id="m">m</span>eio do casal Leon e Nilse?</h2>
-    <button onclick='clickBtn()' id="q1">A) Letra?</button>
-    <button onclick='clickBtn()' id="q2">B) Nenhuma</button>
-    <button onclick='clickBtn()' id="q3">C) Todas</button>
-    <button onclick='clickBtn()' id="q4">D) H</button>   
+    <main class="container">
+        <h2>2) Qual o nome do Primeiro Hokage?</h2>
+        <button onclick='clickBtn()' id="q1">A) Madara Uchiha</button>
+        <button onclick='clickBtn()' id="q2">B) Tobirama Senju</button>
+        <button onclick='clickBtn()' id="q3">C) Hashirama Senju</button>
+        <button onclick='clickBtn()' id="q4">D) Myoto Uzumaki</button> 
+    </main>      
     
+    <footer>
+        <h3>Desenvolvido por <strong>D&MC</strong> 2022</h3>
+    </footer>
+
     <script>
         const resposta1 = document.getElementById('q1');
         const resposta2 = document.getElementById('q2');
         const resposta3 = document.getElementById('q3');
         const resposta4 = document.getElementById('q4');
-        const m = document.getElementById('m');
         
         function clickBtn () {
-            if(event.target == m) {
+            if(event.target == resposta3) {
                 window.location.href = './page-3.html';
             } else {
                 window.location.href = './gameover.html';
