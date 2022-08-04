@@ -2,6 +2,10 @@ const largada = document.getElementById('largada');
 const tartaruga = document.getElementById('tartaruga');
 const caracol = document.getElementById('caracol');
 const estrela = document.getElementById('estrela');
+const q1 = document.getElementById('q1');
+const q2 = document.getElementById('q2');
+const q3 = document.getElementById('q3');
+const q4 = document.getElementById('q4');
 
 let marginLeftTart = 0;
 let timerTart = '';
@@ -13,6 +17,10 @@ let timerEstr = '';
 largada.addEventListener('click', (e) => {
     e.preventDefault();
     largada.disabled = true;
+    q1.disabled = false;
+    q2.disabled = false;
+    q3.disabled = false;
+    q4.disabled = false;
 
     tartaruga.style.marginLeft = '0';
     marginLeftTart = 0;
