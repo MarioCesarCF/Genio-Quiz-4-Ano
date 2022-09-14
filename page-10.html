@@ -15,11 +15,22 @@
 </head>
 <body onload="noBack()" onpageshow="if (event.persisted) noBack()" onload="">
     <main class="container">
-        <h2>11) Em que dia da semana as aulas começaram neste ano de 2022?</h2>
-        <button onclick='clickBtn()' id="q1">A) Quarta-feira</button>
-        <button onclick='clickBtn()' id="q2">B) Quinta-feira</button>
-        <button onclick='clickBtn()' id="q3">C) Sexta-feira</button>
-        <button onclick='clickBtn()' id="q4">D) Terça-feira</button>
+        <div class="title">
+            <h2>11) Que bloco é esse?</h2>
+            <figure>
+                <img src="./img/Dried_Kelp_Block_JE1_BE2.webp" alt="" id="img">
+            </figure>
+        </div>
+        <div class="colunas">
+            <div>
+                <button onclick='clickBtn()' id="q1" class="btn">A) Alga Marinha</button>
+                <button onclick='clickBtn()' id="q2" class="btn">B) Alga Seca</button>
+            </div>
+            <div>
+                <button onclick='clickBtn()' id="q3" class="btn">C) Obsidian</button>
+                <button onclick='clickBtn()' id="q4" class="btn">D) Aço Temperado</button>
+            </div>
+        </div>
     </main>
        
     

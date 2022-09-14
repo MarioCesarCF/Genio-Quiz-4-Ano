@@ -15,11 +15,20 @@
 </head>
 <body onload="noBack()" onpageshow="if (event.persisted) noBack()" onload="">
     <main class="container">
-        <h2>2) Qual o nome do Primeiro Hokage?</h2>
-        <button onclick='clickBtn()' id="q1">A) Madara Uchiha</button>
-        <button onclick='clickBtn()' id="q2">B) Tobirama Senju</button>
-        <button onclick='clickBtn()' id="q3">C) Hashirama Senju</button>
-        <button onclick='clickBtn()' id="q4">D) Myoto Uzumaki</button> 
+        <div class="title">
+            <h2>2) Qual o nome do Primeiro Hokage?</h2>
+        </div>
+        
+        <div class="colunas">
+            <div>
+                <button onclick='clickBtn()' id="q1" class="btn">A) Madara Uchiha</button>
+                <button onclick='clickBtn()' id="q2" class="btn">B) Tobirama Senju</button>        
+            </div>
+            <div>
+                <button onclick='clickBtn()' id="q3" class="btn">C) Hashirama Senju</button>
+                <button onclick='clickBtn()' id="q4" class="btn">D) Myoto Uzumaki</button>
+            </div>
+        </div>        
     </main>      
     
     <footer>

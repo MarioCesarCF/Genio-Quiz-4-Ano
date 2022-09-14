@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,27 +14,36 @@
         function noBack() { window.history.forward(); }
     </script>
 </head>
+
 <body onload="noBack()" onpageshow="if (event.persisted) noBack()" onload="">
     <main class="container">
-        <h2>18) Qual horário está sendo marcado no relógio abaixo?</h2>   
-        <img src="./img/relogio2.png" alt="">
+        <div class="title">
+            <h2>18) Qual horário está sendo marcado no relógio abaixo?</h2>
+            <img src="./img/relogio2.png" alt="" id="img">
+        </div>
         <br>
-        <button onclick='clickBtn()' id="q1">A) 10:35</button>
-        <button onclick='clickBtn()' id="q2">B) 10:40</button>
-        <button onclick='clickBtn()' id="q3">C) 11:35</button>
-        <button onclick='clickBtn()' id="q4">D) 11:40</button>
+        <div class="colunas">
+            <div>
+                <button onclick='clickBtn()' id="q1" class="btn">A) 10:35</button>
+                <button onclick='clickBtn()' id="q2" class="btn">B) 10:40</button>
+            </div>
+            <div>
+                <button onclick='clickBtn()' id="q3" class="btn">C) 11:35</button>
+                <button onclick='clickBtn()' id="q4" class="btn">D) 11:40</button>
+            </div>
+        </div>
     </main>
-       
-    
+
+
     <footer>
         <h3>Desenvolvido por <strong>D&MC</strong> 2022</h3>
     </footer>
 
     <script>
-        const respostaCerta = document.querySelector('#q3');        
-        
-        function clickBtn () {
-            if(event.target == respostaCerta) {
+        const respostaCerta = document.querySelector('#q3');
+
+        function clickBtn() {
+            if (event.target == respostaCerta) {
                 window.location.href = './page-18.html';
             } else {
                 window.location.href = './gameover.html';
@@ -41,4 +51,5 @@
         }
     </script>
 </body>
+
 </html>

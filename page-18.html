@@ -16,12 +16,21 @@
 <body onload="noBack()" onpageshow="if (event.persisted) noBack()" onload="">
 
     <main class="container">
-        <h2>19) Observe a frase abaixo e clique no que está faltando para terminá-la<span onclick='clickBtn()' id="certo">.</span></h2>
-        <h3><i>"O sol nasce todas as manhãs"</i></h3>
-        <button onclick='clickBtn()' id="q1">A) " e noites"</button>
-        <button onclick='clickBtn()' id="q2">B) " às 06:30"</button>
-        <button onclick='clickBtn()' id="q3">C) " pela metade"</button>
-        <button onclick='clickBtn()' id="q4">D) " menos quando está chovendo"</button>
+        <div class="title">
+            <h2>19) Observe a frase abaixo e clique no que está faltando para terminá-la<span onclick='clickBtn()' id="certo">.</span></h2>
+            <h3><i>"O sol nasce todas as manhãs"</i></h3>
+        </div>
+        <div class="colunas">
+            <div>
+                <button onclick='clickBtn()' id="q1" class="btn">A) " e noites"</button>
+                <button onclick='clickBtn()' id="q2" class="btn">B) " às 06:30"</button>
+            </div>
+            <div>
+                <button onclick='clickBtn()' id="q3" class="btn">C) " pela metade"</button>
+                <button onclick='clickBtn()' id="q4" class="btn">D) " menos quando está chovendo"</button>
+            </div>
+        </div>
+        
     </main>
        
     

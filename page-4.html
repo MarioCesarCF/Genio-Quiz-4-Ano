@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,24 +14,35 @@
         function noBack() { window.history.forward(); }
     </script>
 </head>
+
 <body onload="noBack()" onpageshow="if (event.persisted) noBack()" onload="">
     <main class="container">
-        <h2>5) Se ontem fosse amanhã, hoje seria sexta-feira. Que dia é hoje?</h2>
-        <button onclick='clickBtn()' id="q1">A) Quarta-feira</button>
-        <button onclick='clickBtn()' id="q2">B) Quinta-feira</button>
-        <button onclick='clickBtn()' id="q3">C) Sábado</button>
-        <button onclick='clickBtn()' id="q4">D) Domingo</button>       
+        <div class="title">
+            <h2>5) Se ontem fosse amanhã, hoje seria sexta-feira. Que dia é hoje?</h2>
+        </div>
+        <div class="colunas">
+            <div>
+                <button onclick='clickBtn()' id="q1" class="btn">A) Quarta-feira</button>
+                <button onclick='clickBtn()' id="q2" class="btn">B) Quinta-feira</button>
+            </div>
+            <div>
+                <button onclick='clickBtn()' id="q3" class="btn">C) Sábado</button>
+                <button onclick='clickBtn()' id="q4" class="btn">D) Domingo</button>
+            </div>
+        </div>
+
+
     </main>
-    
+
     <footer>
         <h3>Desenvolvido por <strong>D&MC</strong> 2022</h3>
     </footer>
 
-    <script>        
+    <script>
         const resposta4 = document.getElementById('q4');
-        
-        function clickBtn () {
-            if(event.target == resposta4) {
+
+        function clickBtn() {
+            if (event.target == resposta4) {
                 window.location.href = './page-5.html';
             } else {
                 window.location.href = './gameover.html';
@@ -38,4 +50,5 @@
         }
     </script>
 </body>
+
 </html>

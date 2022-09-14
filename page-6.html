@@ -15,11 +15,20 @@
 </head>
 <body onload="noBack()" onpageshow="if (event.persisted) noBack()" onload="">
     <main class="container">
-        <h2><span onclick='clickBtn()' id="certo">7</span>) Que número está no meio de 777?</h2>
-        <button onclick='clickBtn()' id="q1">A) 14</button>
-        <button onclick='clickBtn()' id="q2">B) Sete</button>
-        <button onclick='clickBtn()' id="q3">C) Seven</button>
-        <button onclick='clickBtn()' id="q4">D) 388</button>
+        <div class="title">
+            <h2><span onclick='clickBtn()' id="certo">7</span>) Que número está no meio de 777?</h2>
+        </div>
+        <div class="colunas">
+            <div>
+                <button onclick='clickBtn()' id="q1" class="btn">A) 14</button>
+                <button onclick='clickBtn()' id="q2" class="btn">B) Sete</button>
+            </div>
+            <div>
+                <button onclick='clickBtn()' id="q3" class="btn">C) Seven</button>
+                <button onclick='clickBtn()' id="q4" class="btn">D) 388</button>
+            </div>
+        </div>
+        
     </main>       
     
     <footer>

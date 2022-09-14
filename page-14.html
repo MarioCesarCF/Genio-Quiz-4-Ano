@@ -17,11 +17,20 @@
 
 <body onload="noBack()" onpageshow="if (event.persisted) noBack()" onload="">
     <main class="container">
-        <h2>15) Quem venceu a corrida?</h2>
-        <button onclick='clickBtn()' id="q1" disabled>A) Tartaruga</button>
-        <button onclick='clickBtn()' id="q2" disabled>B) Caracol</button>
-        <button onclick='clickBtn()' id="q3" disabled>C) Estrela do mar</button>
-        <button onclick='clickBtn()' id="q4" disabled>D) Lebre</button>
+        <div class="title">
+            <h2>15) Quem venceu a corrida?</h2>
+        </div>
+        <div class="colunas">
+            <div>
+                <button onclick='clickBtn()' id="q1" disabled class="btn">A) Tartaruga</button>
+                <button onclick='clickBtn()' id="q2" disabled class="btn">B) Caracol</button>
+            </div>
+            <div>
+                <button onclick='clickBtn()' id="q3" disabled class="btn">C) Estrela do mar</button>
+                <button onclick='clickBtn()' id="q4" disabled class="btn">D) Lebre</button>
+            </div>
+        </div> 
+        
         <br>
         <br>
         <button id="largada">Largada!</button>

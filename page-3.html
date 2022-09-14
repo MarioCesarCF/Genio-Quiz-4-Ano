@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,15 +14,24 @@
         function noBack() { window.history.forward(); }
     </script>
 </head>
+
 <body onload="noBack()" onpageshow="if (event.persisted) noBack()" onload="">
     <main class="container">
-        <h2>3) Quanto é 503 - 78?</h2>
-        <button onclick='clickBtn()' id="q1">A) 426</button>
-        <button onclick='clickBtn()' id="q2">B) 425</button>
-        <button onclick='clickBtn()' id="q3">C) 424</button>
-        <button onclick='clickBtn()' id="q4">D) 423</button>   
-    </main>    
-    
+        <div class="title">
+            <h2>3) Quanto é 503 - 78?</h2>
+        </div>
+        <div class="colunas">
+            <div>
+                <button onclick='clickBtn()' id="q1" class="btn">A) 426</button>
+                <button onclick='clickBtn()' id="q2" class="btn">B) 425</button>
+            </div>
+            <div>
+                <button onclick='clickBtn()' id="q3" class="btn">C) 424</button>
+                <button onclick='clickBtn()' id="q4" class="btn">D) 423</button>
+            </div>
+        </div>
+    </main>
+
     <footer>
         <h3>Desenvolvido por <strong>D&MC</strong> 2022</h3>
     </footer>
@@ -31,9 +41,9 @@
         const resposta2 = document.getElementById('q2');
         const resposta3 = document.getElementById('q3');
         const resposta4 = document.getElementById('q4');
-        
-        function clickBtn () {
-            if(event.target == resposta2) {
+
+        function clickBtn() {
+            if (event.target == resposta2) {
                 window.location.href = './page-4.html';
             } else {
                 window.location.href = './gameover.html';
@@ -41,4 +51,5 @@
         }
     </script>
 </body>
+
 </html>

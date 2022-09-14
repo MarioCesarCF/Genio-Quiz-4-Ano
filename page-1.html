@@ -16,16 +16,24 @@
 </head>
 <body onload="noBack()" onpageshow="if (event.persisted) noBack()" onload="">
     <main class="container">
-        <h2>1) No jogo Minecraft de que mob é este ovo?</h2>
-        <figure>
-            <img src="./img/ovo2.png" alt="">
-        </figure>
-        <button onclick='clickBtn()' id="q1">A) Esqueleto</button>
-        <button onclick='clickBtn()' id="q2">B) Iron Golem</button>
-        <button onclick='clickBtn()' id="q3">C) Creeper</button>
-        <button onclick='clickBtn()' id="q4">D) Aranha</button>  
+        <div class="title">
+            <h2 >1) No jogo Minecraft de que mob é este ovo?</h2>
+            <figure>
+                <img src="./img/ovo2.png" alt="" id="img">
+            </figure>
+        </div>  
+        <div class="colunas">
+            <div>
+                <button onclick='clickBtn()' id="q1" class="btn">A) Esqueleto</button>
+                <button onclick='clickBtn()' id="q2" class="btn">B) Iron Golem</button>        
+            </div>
+            <div>
+                <button onclick='clickBtn()' id="q3" class="btn">C) Creeper</button>
+                <button onclick='clickBtn()' id="q4" class="btn">D) Aranha</button>  
+            </div>
+        </div>           
     </main>    
-    
+   
     <footer>
         <h3>Desenvolvido por <strong>D&MC</strong> 2022</h3>
     </footer>

@@ -1,8 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+
+* {
+    --color-one: rgb(181, 230, 29);
+    --color-two: rgb(153, 217, 234);
+    --color-background: rgb(64, 32, 32);
+    --color-red-border: rgb(237, 28, 36);
+    --color-orange-border: rgb(255, 128, 0);
+    --color-six: rgb(153, 197, 22);
+}
+
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: rgb(184, 196, 212);
+    background-color: var(--color-background);
 }
 
 main {
@@ -14,8 +25,66 @@ main {
     height: 60vh;
 }
 
+.title {
+    width: 100%;
+    background: linear-gradient(to top, var(--color-one) 0%, var(--color-two) 100%);;
+    border-radius: 3rem 0 3rem 0;
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 5rem;
+}
+.title::before {
+    border-radius: 50px 0 50px 0;
+    content: '';
+    background-image: linear-gradient(to top, var(--color-orange-border) 0%, var(--color-red-border) 100%);
+    top: -10px;
+    left: -10px;
+    bottom: -10px;
+    right: -10px;
+    position: absolute;
+    z-index:-1;
+}
+
+.btn {
+    width: 80%;
+    background: var(--color-two);
+    border-radius: 1rem 0 1rem 0;
+    position: relative;
+    text-align: center;
+    padding: 20px 50px;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+}
+
+.btn::before {
+    border-radius: 1rem 0 1rem 0;
+    content: '';
+    background-image: linear-gradient(to top, var(--color-orange-border) 0%, var(--color-red-border) 100%);
+    top: -5px;
+    left: -5px;
+    bottom: -5px;
+    right: -5px;
+    position: absolute;
+    z-index:-1;
+}
+
+.colunas {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+#img {
+    width: 250px;
+}
+
 .container {
-    margin: 40px auto;    
+    margin: 40px auto;
+    margin-bottom: 10px;    
 }
 
 button {
@@ -31,37 +100,38 @@ a {
 .t1 {
     width: 50px;
     height: 50px;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
 }
 .t2 {
     width: 35px;
     height: 35px;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
 }
 .t3 {
     width: 25px;
     height: 25px;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
 }
 .t4 {
     width: 15px;
     height: 15px;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
 }
 .t5 {
     width: 51px;
     height: 50px;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
 }
 
 .corrida {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 #pista1 {
     width: 300px;
-    background-color: red;
+    background-color: rgb(17, 194, 17);
     display: flex;
     align-items: flex-start;
 }
@@ -72,7 +142,7 @@ a {
 
 #pista2 {
     width: 300px;
-    background-color: rgb(208, 255, 0);
+    background-color: red;
     display: flex;
     align-items: flex-start;
 }
@@ -82,7 +152,7 @@ a {
 
 #pista3 {
     width: 300px;
-    background-color: rgb(17, 0, 255);
+    background-color: rgb(255, 0, 174);
     display: flex;
     align-items: flex-start;
 }
@@ -95,12 +165,10 @@ footer {
     background-color: rgb(189, 187, 187);
     align-items: center;
     justify-content: center;
-    text-align: center;
-    margin: 0;
+    text-align: center;    
     height: 60px;
     font-size: 20px;
-    bottom: 0;
-    position: fixed;
+    margin-top: 12.5rem; 
     width: 100%;
 }
 

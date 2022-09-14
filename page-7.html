@@ -15,11 +15,20 @@
 </head>
 <body onload="noBack()" onpageshow="if (event.persisted) noBack()" onload="">
     <main class="container">
-        <h2>8) Você está andando na rua em direção ao norte. Na próxima encruzilhada você decide ir para a sorveteria que está a oeste. Para que lado você vai?</h2>
-        <button onclick='clickBtn()' id="q1">A) Em frente</button>
-        <button onclick='clickBtn()' id="q2">B) Direita</button>
-        <button onclick='clickBtn()' id="q3">C) Para trás</button>
-        <button onclick='clickBtn()' id="q4">D) Esquerda</button>  
+        <div class="title">
+            <h2>8) Você está andando na rua em direção ao norte. Na próxima encruzilhada você decide ir para a sorveteria que está a oeste. Para que lado você vai?</h2>
+        </div>
+        <div class="colunas">
+            <div>
+                <button onclick='clickBtn()' id="q1" class="btn">A) Em frente</button>
+                <button onclick='clickBtn()' id="q2" class="btn">B) Direita</button>
+            </div>
+            <div>
+                <button onclick='clickBtn()' id="q3" class="btn">C) Para trás</button>
+                <button onclick='clickBtn()' id="q4" class="btn">D) Esquerda</button> 
+            </div>
+        </div>
+         
     </main>
        
     
