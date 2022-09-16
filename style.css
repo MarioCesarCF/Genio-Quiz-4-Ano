@@ -39,10 +39,10 @@ main {
     border-radius: 50px 0 50px 0;
     content: '';
     background-image: linear-gradient(to top, var(--color-orange-border) 0%, var(--color-red-border) 100%);
-    top: -10px;
-    left: -10px;
-    bottom: -10px;
-    right: -10px;
+    top: -5px;
+    left: -5px;
+    bottom: -5px;
+    right: -5px;
     position: absolute;
     z-index:-1;
 }
@@ -53,7 +53,7 @@ main {
     border-radius: 1rem 0 1rem 0;
     position: relative;
     text-align: center;
-    padding: 20px 50px;
+    padding: 20px 35px;
     box-sizing: border-box;
     margin-bottom: 1rem;
 }
@@ -85,6 +85,7 @@ main {
 .container {
     margin: 40px auto;
     margin-bottom: 10px;    
+   
 }
 
 button {
@@ -168,13 +169,14 @@ footer {
     text-align: center;    
     height: 60px;
     font-size: 20px;
-    margin-top: 12.5rem; 
+    margin-top: 13rem; 
     width: 100%;
+    bottom: 0;
 }
 
 @media (min-width: 1000px) {
     main {
-        padding: 0 50px;
+        padding: 0;
         max-width: 980px;
     }
 }
@@ -182,5 +184,18 @@ footer {
 @media (max-width: 500px) {
     main p {
         padding: 0 20px;
+    }
+
+    .container .colunas div {
+        margin: 0;
+        max-width: 200px;
+    }
+    
+    .container {
+        padding: 0;
+    }
+
+    .btn {
+        padding: 10px;
     }
 }
