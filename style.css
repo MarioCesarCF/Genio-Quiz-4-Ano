@@ -33,7 +33,7 @@ main {
     text-align: center;
     padding: 20px;
     box-sizing: border-box;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
 }
 .title::before {
     border-radius: 50px 0 50px 0;
@@ -45,6 +45,32 @@ main {
     right: -5px;
     position: absolute;
     z-index:-1;
+}
+
+.titleVictory {
+    width: 100%;
+    background: linear-gradient(to top, var(--color-one) 0%, var(--color-two) 100%);;
+    border-radius: 3rem 0 3rem 0;
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 1em;
+}
+.titleVictory::before {
+    border-radius: 50px 0 50px 0;
+    content: '';
+    background-image: linear-gradient(to top, var(--color-orange-border) 0%, var(--color-red-border) 100%);
+    top: -5px;
+    left: -5px;
+    bottom: -5px;
+    right: -5px;
+    position: absolute;
+    z-index:-1;
+}
+
+.mainVictory {
+    margin-top: 3em;
 }
 
 .btn {
@@ -79,7 +105,7 @@ main {
 }
 
 #img {
-    width: 250px;
+    width: 150px;
 }
 
 .container {
@@ -167,10 +193,10 @@ footer {
     align-items: center;
     justify-content: center;
     text-align: center;    
-    height: 60px;
+    height: 40px;
     font-size: 20px;
-    margin-top: 13rem; 
     width: 100%;
+    position: absolute;
     bottom: 0;
 }
 
